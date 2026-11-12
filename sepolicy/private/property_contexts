@@ -1,1 +1,2 @@
 ro.product.mod_device u:object_r:build_prop:s0
+sys.fp.vendor  u:object_r:vendor_fp_prop:s0
