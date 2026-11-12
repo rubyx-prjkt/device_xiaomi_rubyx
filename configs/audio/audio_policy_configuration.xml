@@ -120,7 +120,6 @@
                              samplingRates="8000 16000 32000 44100 48000"
                              channelMasks="AUDIO_CHANNEL_IN_MONO AUDIO_CHANNEL_IN_STEREO"/>
                 </mixPort>
-                <mixPort name="hifi_playback" role="source"/>
                 <mixPort name="hifi_input" role="sink"/>
             </mixPorts>
             <devicePorts>
@@ -265,9 +264,9 @@
                 <route type="mix" sink="AUX Digital Out"
                        sources="primary output,direct_pcm"/>
                 <route type="mix" sink="USB Device Out"
-                       sources="primary output,deep_buffer,fast,FM Tuner In,voip_rx,Voice Call In,hifi_playback"/>
+                       sources="primary output,deep_buffer,fast,FM Tuner In,voip_rx,Voice Call In"/>
                 <route type="mix" sink="USB Headset Out"
-                       sources="primary output,deep_buffer,fast,FM Tuner In,voip_rx,Voice Call In,hifi_playback"/>
+                       sources="primary output,deep_buffer,fast,FM Tuner In,voip_rx,Voice Call In"/>
                 <route type="mix" sink="BT SCO"
                        sources="primary output,deep_buffer,fast,voip_rx,Voice Call In"/>
                 <route type="mix" sink="BT SCO Headset"
