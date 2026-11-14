@@ -244,7 +244,7 @@ ro.soc.manufacturer=Mediatek
 ro.soc.model=MT6877
 
 # Power
-vendor.powerhal.interaction.max=650
+vendor.powerhal.interaction.max=600
 vendor.powerhal.interaction.min=30
 vendor.powerhal.interaction.offset=0
 
