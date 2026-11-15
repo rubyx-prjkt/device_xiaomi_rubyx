@@ -10,9 +10,6 @@ persist.sys.sf.native_mode=0
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 
-# eBPF
-ro.bpf.kver_override=5.10.239
-
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
