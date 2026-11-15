@@ -62,8 +62,7 @@ BOARD_RAMDISK_USE_LZ4 := true
 
 BOARD_KERNEL_CMDLINE := \
     bootopt=64S3,32N2,64N2 \
-    androidboot.tee_type=2 \
-    cgroup.memory=nokmem
+    androidboot.tee_type=2
 
 BOARD_KERNEL_CMDLINE += androidboot.serialconsole=0
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
@@ -97,13 +96,16 @@ DEVICE_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/vintf/manifest_nfc.xml
 
 # Kernel
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := r563880
+TARGET_KERNEL_CLANG_VERSION := r574158
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6877
 TARGET_KERNEL_CONFIG := ruby_defconfig
 TARGET_KERNEL_NO_GCC := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz
+TARGET_KERNEL_DTB := mediatek/mt6877.dtb mediatek/ruby.dtbo
+TARGET_DTB_LIST_WILDCARD := mediatek/mt6877
+TARGET_DTBO_LIST_WILDCARD := mediatek/ruby
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072                   # 2048      * 64   (pagesize)
