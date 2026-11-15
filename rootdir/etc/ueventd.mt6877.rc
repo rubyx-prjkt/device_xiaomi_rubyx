@@ -43,6 +43,7 @@
 # GPS
 /dev/gpsdl0               0660   gps        gps
 /dev/gpsdl1               0660   gps        gps
+/dev/gps_pwr              0660   gps        gps
 /dev/stpgps               0660   gps        gps
 /dev/gps                  0660   gps        system
 /dev/fw_log_gps           0660   gps        gps
@@ -154,6 +155,10 @@
 # Change ION driver permission
 /dev/ion                  0666   system     graphics
 
+# DMA-BUF multimedia heaps
+/dev/dma_heap/mtk_mm          0660   system     camera
+/dev/dma_heap/mtk_mm-uncached 0660   system     camera
+
 #touch
 /dev/touch                0660   root       system
 
@@ -178,3 +183,6 @@ subsystem mi_display
 
 # Raw HID devices
 /dev/hidraw*                           0660   system     system
+
+# Face detection
+/dev/camera-fdvt 0660 system camera
