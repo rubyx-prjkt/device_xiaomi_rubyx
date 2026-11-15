@@ -56,7 +56,6 @@ genfscon sysfs /devices/platform/15020000.imgsys_config/wakeup                  
 genfscon sysfs /devices/platform/19030000.vpu_core0/wakeup                                                  u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19031000.vpu_core1/wakeup                                                  u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/1a000000.camsys/wakeup                                                     u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/1a000000.camisp_legacy/wakeup                                              u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/usb0/wakeup                                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10010000.kp/wakeup                                                           u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10026000.pwrap/10026000.pwrap:mt6359-pmic/mt6359-rtc/rtc/rtc0/alarmtimer.1.auto/wakeup u:object_r:sysfs_wakeup:s0
