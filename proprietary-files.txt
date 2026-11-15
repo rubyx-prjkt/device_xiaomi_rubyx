@@ -1213,17 +1213,17 @@ vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
 vendor/lib/arm.graphics-V1-ndk_platform.so
-vendor/lib64/egl/libGLES_mali.so
-vendor/lib64/egl/libGLES_meow.so
-vendor/lib64/egl/libMEOW_data.so
-vendor/lib64/egl/libMEOW_gift.so
-vendor/lib64/egl/libMEOW_qt.so
-vendor/lib64/egl/libMEOW_trace.so
+vendor/lib64/egl/libGLES_mali.so # from a34x A346BXXUBEYI7
+vendor/lib64/egl/libGLES_meow.so # from a34x A346BXXUBEYI7
+vendor/lib64/egl/libMEOW_data.so # from a34x A346BXXUBEYI7
+vendor/lib64/egl/libMEOW_gift.so # from a34x A346BXXUBEYI7
+vendor/lib64/egl/libMEOW_qt.so # from a34x A346BXXUBEYI7
+vendor/lib64/egl/libMEOW_trace.so # from a34x A346BXXUBEYI7
 vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/hwcomposer.mt6877.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.14-impl.so
-vendor/lib64/hw/vulkan.mali.so
+vendor/lib64/hw/vulkan.mali.so # from a34x A346BXXUBEYI7
 vendor/lib64/mt6877/libaiselector.so;SYMLINK=vendor/lib64/libaiselector.so
 vendor/lib64/mt6877/libdpframework.so;SYMLINK=vendor/lib64/libdpframework.so
 vendor/lib64/mt6877/libnir_neon_driver.so;SYMLINK=vendor/lib64/libnir_neon_driver.so
@@ -1241,7 +1241,7 @@ vendor/lib64/libdre.so
 vendor/lib64/libgamehdr.so
 vendor/lib64/libged.so
 vendor/lib64/libgpu_aux.so
-vendor/lib64/libgpud.so
+vendor/lib64/libgpud.so # from a34x A346BXXUBEYI7
 vendor/lib64/libgralloc_extra.so
 vendor/lib64/libgralloc_metadata.so
 vendor/lib64/libgralloctypes_mtk.so

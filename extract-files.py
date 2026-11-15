@@ -139,6 +139,13 @@ blob_fixups: blob_fixups_user_type = {
             '68 00 00 B0 08 01 45 F9 88 04 00 B5',
             '36 00 00 14',
         ),
+
+    'vendor/lib64/egl/libGLES_mali.so': blob_fixup()
+        .add_needed('libshim_mali.so')
+        .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
+
+    'vendor/lib64/libgpud.so': blob_fixup()
+        .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
 }
 
 module = ExtractUtilsModule(
