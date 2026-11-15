@@ -1,2 +1,3 @@
 # Allow USB HAL to search sysfs_udc
 allow mtk_hal_usb sysfs_udc:dir search;
+allow mtk_hal_usb sysfs_udc:lnk_file read;
