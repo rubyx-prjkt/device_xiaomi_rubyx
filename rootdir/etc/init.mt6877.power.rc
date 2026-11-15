@@ -149,6 +149,17 @@ on enable-low-power
 on property:sys.boot_completed=1
     trigger enable-low-power
 
+on post-fs-data && property:ro.boot.boot_trace=1
+    write /sys/devices/system/cpu/perf/enable 1
+    write /sys/kernel/tracing/events/perf_tracker/enable 1
+
+on property:persist.vendor.boot_trace=1
+    write /sys/devices/system/cpu/perf/enable 1
+    write /sys/kernel/tracing/events/perf_tracker/enable 1
+
+on property:sys.boot_completed=1 && property:persist.vendor.boot_trace=1
+    write /sys/devices/system/cpu/perf/enable 0
+
 service vendor.gralloc-4-0 /vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
     class hal animation
     interface android.hardware.graphics.allocator@4.0::IAllocator default
