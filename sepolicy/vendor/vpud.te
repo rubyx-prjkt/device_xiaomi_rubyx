@@ -1,1 +1,7 @@
 get_prop(vpud_native, vendor_camera_prop)
+allow vpud_native mtk_hal_c2:fd use;
+allow vpud_native { appdomain -isolated_app_all }:fd use;
+allow vpud_native mediacodec:fd use;
+allow vpud_native cameraserver:fd use;
+allow vpud_native surfaceflinger:fd use;
+allow vpud_native hal_graphics_allocator:fd use;
