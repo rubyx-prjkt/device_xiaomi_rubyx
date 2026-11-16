@@ -1,0 +1,2 @@
+# Linux 5.10+ checks system:firmware_load on READING_FIRMWARE in addition to file:read
+allow kernel vendor_file:system firmware_load;
