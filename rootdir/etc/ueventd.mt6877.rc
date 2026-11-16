@@ -156,8 +156,8 @@
 /dev/ion                  0666   system     graphics
 
 # DMA-BUF multimedia heaps
-/dev/dma_heap/mtk_mm          0660   system     camera
-/dev/dma_heap/mtk_mm-uncached 0660   system     camera
+/dev/dma_heap/mtk_mm          0664   system     camera
+/dev/dma_heap/mtk_mm-uncached 0664   system     camera
 
 #touch
 /dev/touch                0660   root       system
