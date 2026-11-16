@@ -1,0 +1,1 @@
+allow kernel vendor_file:system firmware_load;
