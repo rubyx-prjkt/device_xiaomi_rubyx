@@ -1,0 +1,1 @@
+# Intentionally unmapped so fingerprint sensor touch/nav events do not emit DPAD keys or exit touch mode
