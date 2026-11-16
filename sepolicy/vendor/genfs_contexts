@@ -87,3 +87,4 @@ genfscon sysfs /devices/platform/alarmtimer/wakeup                              
 genfscon sysfs /devices/platform/battery/wakeup                                                               u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/mt_charger/wakeup                                                            u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/mtk_lpm/mtk_cpuidle_pm/wakeup                                                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/touch/touch_dev/wakeup                                                        u:object_r:sysfs_wakeup:s0
