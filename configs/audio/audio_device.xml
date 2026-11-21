@@ -25,6 +25,16 @@
             <kctl name="HPL Mux" value="Open" />
             <kctl name="HPR Mux" value="Open" />
         </path>
+         <!--hifi dac output-->
+        <path name="hifi_dac_output" value="turnon">
+            <kctl name="DAC In Mux" value="Normal Path" />
+            <kctl name="HPL Mux" value="Audio Playback" />
+            <kctl name="HPR Mux" value="Audio Playback" />
+        </path>
+        <path name="hifi_dac_output" value="turnoff">
+            <kctl name="HPL Mux" value="Open" />
+            <kctl name="HPR Mux" value="Open" />
+        </path>
         <path name="HP_IMPEDANCE" value="turnon">
             <kctl name="DAC In Mux" value="Normal Path" />
             <kctl name="HPL Mux" value="HP Impedance" />
