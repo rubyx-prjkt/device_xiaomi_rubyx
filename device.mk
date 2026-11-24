@@ -452,19 +452,10 @@ $(call soong_config_set_bool,mediatek_wifi_hal,use_pre_u_qpr2_struct,true)
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-rubyx/device.mk)
 $(call inherit-product, vendor/xiaomi/rubyx/rubyx-vendor.mk)
 
-# Axion Stuff
-TARGET_DEVICE := rubyx
-AXION_SOC := mt6877
-PERF_GOV_SUPPORTED := true
-PERF_DEFAULT_GOV := schedutil
-PERF_ANIM_OVERRIDE := true
-TORCH_STR_SUPPORTED := true
-TARGET_NEEDS_DOZE_FIX := true
-TARGET_DOZE_TAP_PULSE_SUPPORTED := true
-TARGET_DOZE_DOUBLE_TAP_PULSE_SUPPORTED := true
-TARGET_DOZE_PICKUP_PULSE_SUPPORTED := true
-TARGET_DOZE_SIDE_FPS_PULSE_SUPPORTED := true
-TARGET_SUPPORTED_REFRESH_RATES := 60,120
-TARGET_TOUCH_BOOST_SUPPORTED := true
-TARGET_ENABLES_IMS_OVERRIDES := true
-TARGET_DISABLES_LIBPERF := false
+PRODUCT_SYSTEM_PROPERTIES += ro.lunaris.maintainer=CasanovaFR
+WITH_GMS := true
+WITH_PIXEL_LAUNCHER := true
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_BOOT_ANIMATION_RES := 1080
